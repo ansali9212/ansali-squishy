@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,14 +12,18 @@ button {background-color: green;}
     <h1>ANSALI SQUISHY</h1>
     <h1>Hi, kami menjual berbagai mainan squishy dengan harga terjangkau.</h1>
 <p><b>Cek mainan yang kamu cari disini</b></p>
- <h2>Menu</h2>
+ <h2>Variasi</h2>
 <p>Squishy Size S - Rp5.000</p>
 <p>Squishy Size M - Rp10.000</p>
 <p>Squishy Size L - Rp12.000</p>
 <p>Squishy Size XL - Rp15.000</p>
 <button onclick="pesan()">PESAN SEKARANG</button>
 <script>
-  function pesan(){let nama = document.getElementById("nama").value; let ukuran = document.getElementById("ukuran"); let jumlah = document.getElementById("jumlah").value; let harga = ukuran.value; let namaUkuran = ukuran.options[ukuran.selectedIndex].text; let total = harga * jumlah; let pesan = `Halo, saya ingin pesan squishy. Nama: ${nama} Ukuran: ${namaUkuran} Jumlah: ${jumlah} Total: Rp${total.toLocaleString("id-ID")}`;
+  function pesan(){let nama = document.getElementById("nama").value; let ukuran = document.getElementById("ukuran"); let jumlah = document.getElementById("jumlah").value; let harga = ukuran.value; let namaUkuran = ukuran.options[ukuran.selectedIndex].text; let total = harga * jumlah; let pesan = `Halo, saya ingin pesan squishy.
+  Nama: ${nama} 
+  Ukuran: ${namaUkuran} 
+  Jumlah: ${jumlah} 
+  Total: Rp${total.toLocaleString("id-ID")}`;
   let nomor = "62895418961010";
   window.open("https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan),"_blank");}
 </script>
